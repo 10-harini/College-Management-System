@@ -1,0 +1,235 @@
+.main-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url(C:/dummy/login-app/public/images/college_bg.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+/* Overlay */
+.main-layout::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+/* Z-index layer fix */
+.hamburger,
+.navbar,
+.sidebar,
+.main-content,
+.main-footer {
+  position: relative;
+  z-index: 1;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  height: 15vh;
+  width: 100vw;
+  /* if navbar is 60px, footer is 50px */
+
+  font-size: 40px;
+  font-weight: 500;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hamburger */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  z-index: 1001;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -220px;
+  width: 200px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding-top: 80px;
+  padding-left: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-link {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+}
+
+/* Footer */
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  font-weight: 500;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+
+/* User icon and logout icon container */
+.icon-wrapper {
+  position: absolute;
+  top: 12px;
+  right: 30px;
+  z-index: 9999;
+
+}
+
+.logout-icon {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.logout-icon:hover {
+  transform: scale(1.2);
+  color: #dddddd;
+}
+
+.logout-inline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid white;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: background 0.3s ease;
+}
+
+.logout-inline:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.logout-inline-icon {
+  font-size: 20px;
+  color: white;
+}
+
+.logout-inline-text {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.welcome-message {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+
+.typewriter-container {
+  text-align: center;
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid white;
+  font-size: 1.5rem;
+  animation: typing 4s steps(40, end), blink 0.75s step-end infinite;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap');
+
+.typewriter-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1.7rem;
+  color: white;
+  font-family: 'Cinzel Decorative', cursive;
+  border: none;
+  animation: typing 2s steps(40, end), fadeOut 3s steps(40, end) 2s forwards, vanish 2s ease-in-out 3s forwards;
+}
+
+/* Typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Vanish letter-by-letter */
+@keyframes fadeOut {
+  from { width: 100% }
+  to { width: 0 }
+}
+
+/* Fully hide the element */
+@keyframes vanish {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    margin: 0;
+    padding: 0;
+  }
+}

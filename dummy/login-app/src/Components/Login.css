@@ -1,0 +1,175 @@
+/* Background container with dark overlay */
+.login-container {
+  min-height: 100vh;
+  background: url('../../public/images/college_bg.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* Dark overlay */
+  z-index: 0;
+}
+
+/* Login box with glass effect */
+.login-box {
+  position: relative;
+  z-index: 1;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+/* Heading */
+.login-box h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Input fields styled like button */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  /* Same as login button */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  backdrop-filter: blur(5px);
+  /* Glass effect */
+  -webkit-backdrop-filter: blur(5px);
+  /* Safari support */
+  transition: background 0.3s ease, border 0.3s ease;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.2);
+  /* Slightly brighter on focus */
+}
+
+.login-box input::placeholder {
+  color: #dddddd;
+  font-weight: normal;
+}
+
+
+/* Glass-style button */
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, border 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.login-box button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Eye icon for password visibility */
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+  /* space for the eye icon */
+  height: 40px;
+  /* optional: standardize height */
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #ddd;
+  cursor: pointer;
+}
+
+/* White link styling */
+a {
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #fffdfd;
+  text-decoration: underline;
+}
+
+/* Success/Error messages */
+.success-message {
+  color: #90ee90;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: #ff6b6b;
+  margin-top: 10px;
+}
+
+/* REMOVE any accidental eye icons (left-side) */
+.password-wrapper::before,
+.password-wrapper input::before,
+.password-wrapper input::after,
+input[type="password"]::before,
+input[type="password"]::after {
+  content: none !important;
+  display: none !important;
+  background: none !important;
+  background-image: none !important;
+}
+
+/* Prevent browser autofill styles and injected icons */
+/* Remove any auto-added eye icons or overlays */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+input[type="password"]::before,
+input[type="password"]::after,
+.password-wrapper input::before,
+.password-wrapper input::after {
+  display: none !important;
+  content: none !important;
+  background: none !important;
+}
+

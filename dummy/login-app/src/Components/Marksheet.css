@@ -1,0 +1,166 @@
+/* === Fullscreen Background === */
+.marksheet-container {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(123, 116, 215, 0.1);;
+}
+
+/* === Glass Card for Marks === */
+.marksheet-box {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  padding: 30px;
+  border-radius: 20px;
+  width: 1000px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+/* === Header Section === */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-header h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.top-header {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.top-header h2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  color: white;
+}
+
+/* === Add Button === */
+.add-btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn:hover {
+  background-color: transparent;
+}
+
+/* === Table === */
+.marks-table {
+  width: 100%;
+  margin-top: 25px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.marks-table th,
+.marks-table td {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: white;
+}
+
+.marks-table th {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* === Modal Overlay === */
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+}
+
+.modal-dialog {
+  max-width: 800px;
+}
+
+/* === Modal Glass Style === */
+.modal-content {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+
+.btn-close {
+  filter: invert(1);
+  opacity: 1;
+}
+
+/* === Transparent Inputs === */
+.form-control,
+.form-select {
+  background-color: transparent !important;
+  color: white !important;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* === Subject Input Rows === */
+.subject-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.subject-row h4 {
+  flex: 1 0 100px;
+  margin: 0;
+  color: white;
+}
+
+.subject-row input {
+  flex: 1;
+  min-width: 100px;
+}
+
+/* === Submit Button === */
+.btn-primary,
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover,
+.submit-btn:hover {
+  background-color: #218838;
+}
+

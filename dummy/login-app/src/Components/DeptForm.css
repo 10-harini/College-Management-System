@@ -1,0 +1,142 @@
+
+/* Main Glass Container */
+.glass-card {
+  background: rgba(123, 116, 215, 0.1);;
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  padding: 25px;
+  width: 100%;
+  align-items:start;
+  flex:start;
+}
+
+/* Modal Styling */
+.glass-modal {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.glass-content {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Text */
+.glass-card h3 {
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-weight: 700;
+}
+
+
+.text-white {
+  color: #fff !important;
+}
+
+/* Buttons */
+button {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.btn-outline-light {
+  color: white;
+  border: 1px solid #ccc;
+  transition: 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+/* Table */
+.table {
+  margin-top: 20px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.table th,
+.table td {
+  vertical-align: middle !important;
+  color: white;
+}
+
+.table thead th {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Action Buttons */
+.btn-sm {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.btn-outline-success {
+  border: 1px solid #4caf50;
+  color: #4caf50;
+}
+
+.btn-outline-success:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-outline-danger {
+  border: 1px solid #f44336;
+  color: #f44336;
+}
+
+.btn-outline-danger:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.form-select {
+  background-color: transparent !important;
+  color: white !important;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+
+
+
+
+/* Close Button */
+.btn-close {
+  filter: invert(1);
+}
+
+
+/* Transparent Input Fields */
+.form-control {
+  background-color: transparent !important;
+  color: white !important;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: none;
+  outline: none;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}

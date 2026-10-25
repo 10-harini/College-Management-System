@@ -1,0 +1,262 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.lavender-bg {
+  min-height: 50vh;
+  background: url('../../public/images/college_bg.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 1px;
+  position: relative;
+}
+
+.lavender-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+  z-index: 0;
+}
+
+.lavender-container {
+  background: rgba(123, 116, 215, 0.1); /* Light transparent yellow */
+  border-radius: 16px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.lavender-container h4 {
+  font-size: 2rem;
+  font-weight:bold;
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Buttons (Add/View/Edit/Delete) */
+button, .btn {
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.1);
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.03);
+}
+
+/* Table styling */
+.table {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.table th, .table td {
+  vertical-align: middle;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.table-secondary th {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Modal styling */
+.modal-content {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: none;
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header, .modal-body, .modal-footer {
+  border: none;
+}
+
+.modal-title {
+  color: white;
+}
+
+.form-control {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+
+.form-control::placeholder {
+  color: #eee;
+}
+
+.text-danger {
+  color: #ffb3b3 !important;
+}
+/* Ensure all text inside container is white */
+.lavender-container,
+.lavender-container * {
+  color: white !important;
+}
+
+/* Placeholder text white */
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Table headings and rows */
+.table th,
+.table td {
+  color: white !important;
+}
+
+/* Modal fix */
+.modal-content,
+.modal-content * {
+  font-weight: 600;
+  color: white !important;
+}
+/* Make modal content transparent */
+.modal-content {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Modal text and inputs */
+.modal-content * {
+  color: white !important;
+}
+
+/* Input field background transparent */
+.form-control {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white !important;
+}
+
+/* Input placeholder white */
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Transparent buttons with blur */
+.btn-primary, .btn-secondary, .btn-danger, .btn-warning {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+}
+
+.btn-primary:hover, .btn-secondary:hover, .btn-danger:hover, .btn-warning:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal-body input {
+  background-color: transparent !important;  /* Always transparent */
+  color: white;                              /* Or black if dark background */
+  border: 1px solid white;
+  padding: 8px;
+  border-radius: 6px;
+  outline: none;
+  box-shadow: none;                          /* Removes blue glow on focus */
+}
+
+/* Optional: Prevent white fill on auto-fill (browser) */
+.modal-body input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+/* 🔄 Transparent Input Fix */
+.modal-body input,
+.modal-body textarea,
+.modal-body select {
+  background-color: transparent !important;
+  color: white !important;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 8px;
+  outline: none;
+  box-shadow: none !important;
+}
+
+/* Optional: Remove blue glow and white flash on focus */
+.modal-body input:focus,
+.modal-body textarea:focus,
+.modal-body select:focus {
+  box-shadow: none !important;
+  background-color: transparent !important;
+  color: white !important;
+}
+
+/* Autofill fix for Chrome */
+.modal-body input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+/* Transparent dropdown/select for modal */
+.modal-body select.form-control {
+  background: transparent !important;
+  color: white !important;
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 8px;
+  box-shadow: none !important;
+  appearance: none;
+}
+
+/* Optional: Style dropdown arrow */
+.modal-body select.form-control::-ms-expand {
+  display: none;
+}
+.modal-body select.form-control option {
+  background-color: rgba(0, 0, 0, 0.7); /* Dark background for options */
+  color: white;
+}
+
+.form-select {
+  background: transparent !important;
+  color: white !important;
+  border: 1px solid white;
+  box-shadow: none !important;
+}
+.form-select option {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+/* Placeholder text styling */
+::placeholder {
+  color: rgba(255, 255, 255, 0.8); /* Bright white with slight transparency */
+  font-weight: 500;
+}
+
+/* Optional: Target modal input placeholders specifically */
+.modal-body input::placeholder {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 500;
+}
