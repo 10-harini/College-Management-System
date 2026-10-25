@@ -1,43 +1,63 @@
 ## 📸 Screenshots
 
-### Homepage
-![Homepage](https://github.com/10-harini/College-Management-System/blob/main/screenshot/homepage.png)
-
 ### Login
-![Login](https://github.com/10-harini/College-Management-System/blob/main/screenshot/login.png)
+![Login](screenshot/login.png)
+
+
+### Signup
+![Signup](screenshot/signup.png)
+
+
+### Logout
+![Logout](screenshot/logout.png)
+
+
+### Homepage
+![Homepage](screenshot/homepage.png)
+
 
 ### Dashboard
-![Dashboard](https://github.com/10-harini/College-Management-System/blob/main/screenshot/dashboard.png)
+![Dashboard](screenshot/dashboard.png)
 
-### Student Management
-![Student Management](https://github.com/10-harini/College-Management-System/blob/main/screenshot/student.png)
 
-### Add Student
-![Add Student](https://github.com/10-harini/College-Management-System/blob/main/screenshot/student%20add.png)
+### Department
+![Department](screenshot/department.png)
 
-### Department Management
-![Department](https://github.com/10-harini/College-Management-System/blob/main/screenshot/department.png)
 
 ### Add Department
-![Add Department](https://github.com/10-harini/College-Management-System/blob/main/screenshot/department%20add.png)
+![Add Department](screenshot/department%20add.png)
 
-### Subject Management
-![Subject](https://github.com/10-harini/College-Management-System/blob/main/screenshot/subject.png)
 
-### Add Subject
-![Add Subject](https://github.com/10-harini/College-Management-System/blob/main/screenshot/subject%20add.png)
-
-### Marksheet Management
-![Marksheet](https://github.com/10-harini/College-Management-System/blob/main/screenshot/marksheet.png)
+### Marksheet
+![Marksheet](screenshot/marksheet.png)
 
 ### Add Marksheet
-![Add Marksheet](https://github.com/10-harini/College-Management-System/blob/main/screenshot/marksheet%20add.png)
+![Add Marksheet](screenshot/marksheet%20add.png)
+
+### Student
+![Student](screenshot/student.png)
+
+### Add Student
+![Add Student](screenshot/student%20add.png)
+
+
+### Subject
+![Subject](screenshot/subject.png)
+
+### Add Subject
+![Add Subject](screenshot/subject%20add.png)
+
+
+### Swagger Up
+![Swagger Up](screenshot/swagger%20up.png)
+
+
+### Swagger Down
+![Swagger Down](screenshot/swagger%20down.png)
+
 
 ### MySQL Database
-![MySQL Database](https://github.com/10-harini/College-Management-System/blob/main/screenshot/database%20(MYSQL%20Workbench).png)
-
-### Swagger API
-![Swagger UI](https://github.com/10-harini/College-Management-System/blob/main/screenshot/swagger%20up.png)
+![MySQL Database](screenshot/database%20(MYSQL%20Workbench).png)
 
 # 🎓 College Management System
 
